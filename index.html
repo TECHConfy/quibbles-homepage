@@ -21,7 +21,7 @@
         .post-card:hover {transform : translateY(-2px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-[#f0f2f5] text-gray-900">
 
     <!-- NAVBAR (MY PART) -->
      <nav class = "bg-white border-b sticky top-0 z-50 shadow-sm">
@@ -30,7 +30,7 @@
 
                 <!--Logo -->
                 <div class="flex items-center gap-3">
-                <img src="https://quibblesapp.com/img/Quibbles_Logo.png" alt="Quibbles Logo" class="h-8">
+                <img src="https://quibblesapp.com/img/Quibbles_Logo.png" alt="Quibbles Logo" class="h-10">
                 </div>
 
                 <!-- Search Bar -->
@@ -62,22 +62,23 @@
          <aside class="w-64 hidden lg:block space-y-6">
             <!-- Navigation -->
             <div class="bg-white rounded-2xl p-4">
-                <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-xl mt-1 rounded-xl font-medium">
+                <h3 class="font-medium">Navigation</h3>
+                <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1 rounded-xl font-medium">
                     <i class="fa-solid fa-house w-5"></i>
                     <span>Home</span>
                 </a>
 
-                <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-xl mt-1 rounded-xl font-medium">
+                <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1 rounded-xl font-medium">
                     <i class="fa-solid fa-clock w-5"></i>
                     <span>Latest</span>
                 </a>
 
-                <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-xl mt-1">
+                <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1">
                     <i class="fa-solid fa-fire w-5"></i>
                     <span>Trending</span>
                 </a>
 
-                <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-xl mt-1 rounded-xl font-medium">
+                <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1 rounded-xl font-medium">
                     <i class="fa-solid fa-comment w-5"></i>
                     <span>Chat</span>
                 </a>
@@ -87,68 +88,111 @@
             <div class="bg-white rounded-2xl p-4">
                 <div class="flex justify-between items-center mb-4 px-2">
                     <h3 class="font-semibold">Communities</h3>
-                    <button class="text-blue-600 text-sm font-medium">Create +</button>
                 </div>
 
+
             <div class="space-y-1 max-h-96 overflow-y-auto">
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
-                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=Jamb.png" class="w-6 h-6 rounded-full">
-                    <span class="font-medium text-sm">q/Jamb</span>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl font-semibold">
+                    <i class="fa-solid fa-users w-5 text-gray-600"></i>
+                    <span>All Communities</span>
+                    <hr class="my-2">
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
-                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=FCBarcelona.png" class="w-6 h-6 rounded-full">
-                    <span class="font-medium text-sm">q/FCBarcelona</span>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
+                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=interaction.png" class="w-6 h-6 rounded-full">
+                    <span class="font-medium text-sm">q/interaction</span>
                 </a>
-                  <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
-                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=Relationship.png" class="w-6 h-6 rounded-full">
-                    <span class="font-medium text-sm">q/Relationship</span>
-                </a>
-                  <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
-                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=Thoughts.png" class="w-6 h-6 rounded-full">
-                    <span class="font-medium text-sm">q/Thoughts</span>
-                </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
+                                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
                     <img src="https://api.dicebear.com/9.x/icons/svg?seed=NEWS.png" class="w-6 h-6 rounded-full">
                     <span class="font-medium text-sm">q/NEWS</span>
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
                     <img src="https://api.dicebear.com/9.x/icons/svg?seed=Jobs.png" class="w-6 h-6 rounded-full">
                     <span class="font-medium text-sm">q/Jobs</span>
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
-                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=Interaction.png" class="w-6 h-6 rounded-full">
-                    <span class="font-medium text-sm">q/Interaction</span>
-                </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
                     <img src="https://api.dicebear.com/9.x/icons/svg?seed=gist_corner.png" class="w-6 h-6 rounded-full">
                     <span class="font-medium text-sm">q/gist_corner</span>
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
                     <img src="https://api.dicebear.com/9.x/icons/svg?seed=Nigeria.png" class="w-6 h-6 rounded-full">
                     <span class="font-medium text-sm">q/Nigeria</span>
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
                     <img src="https://api.dicebear.com/9.x/icons/svg?seed=Education.png" class="w-6 h-6 rounded-full">
                     <span class="font-medium text-sm">q/Education</span>
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
                     <img src="https://api.dicebear.com/9.x/icons/svg?seed=Health.png" class="w-6 h-6 rounded-full">
                     <span class="font-medium text-sm">q/Health</span>
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
                     <img src="https://api.dicebear.com/9.x/icons/svg?seed=Ai.png" class="w-6 h-6 rounded-full">
                     <span class="font-medium text-sm">q/Ai</span>
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
                     <img src="https://api.dicebear.com/9.x/icons/svg?seed=QuibblesRewardHubs.png" class="w-6 h-6 rounded-full">
                     <span class="font-medium text-sm">q/QuibblesRewardHubs</span>
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 rounded-xl">
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
                     <img src="https://api.dicebear.com/9.x/icons/svg?seed=Entertainment.png" class="w-6 h-6 rounded-full">
                     <span class="font-medium text-sm">q/Entertainment</span>
                 </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
+                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=Jamb.png" class="w-6 h-6 rounded-full">
+                    <span class="font-medium text-sm">q/Jamb</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
+                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=FCBarcelona.png" class="w-6 h-6 rounded-full">
+                    <span class="font-medium text-sm">q/FCBarcelona</span>
+                </a>
+                  <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
+                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=Relationship.png" class="w-6 h-6 rounded-full">
+                    <span class="font-medium text-sm">q/Relationship</span>
+                </a>
+                  <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl">
+                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=Thoughts.png" class="w-6 h-6 rounded-full">
+                    <span class="font-medium text-sm">q/Thoughts</span>
+                  </a>
             </div>
             </div>
+
+            <!-- Resources -->
+             <div class="bg-white rounded-2xl p-4">
+                <h3 class="font-medium">Resources</h3>
+
+                <div class="space-y-1">
+                    <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl text-sm">
+                        <i class="fa-solid fa-circle-info w-5 text-gray-500"></i>
+                        <span>About Quibbles</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl text-sm">
+                        <i class="fa-solid fa-bullhorn w-5 text-gray-500"></i>
+                        <span>Advertise</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl text-sm">
+                        <i class="fa-solid fa-star w-5 text-gray-500"></i>
+                        <span>Request Feature</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl text-sm">
+                        <i class="fa-solid fa-circle-question w-5 text-gray-500"></i>
+                        <span>Help</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl text-sm">
+                        <i class="fa-solid fa-bug w-5 text-gray-500"></i>
+                        <span>Report Bug</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-xl text-sm">
+                        <i class="fa-solid fa-code  w-5"></i>
+                        <span>Version 1.6.8.0</span>
+                    </a>
+                </div>
+                <!-- Social Icons -->
+              <div class="flex items-center gap-4 px-3 mt-3">
+                <a href="#" class="text-pink-500 hover:text-pink-600 text-lg"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-blue-500 hover:text-blue-600 text-lg"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-blue-500 hover:text-blue-600 text-lg"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+             </div>
          </aside>
 
         <!-- MAIN FEED (AB2FRESH'S PART) -->
@@ -164,7 +208,26 @@
 
      <!-- FOOTER (MY PART) -->
     <footer class="bg-white border-t mt-12 py-8">
+        <div class="max-w 7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                   <img src="https://quibblesapp.com/img/Quibbles_Logo.png" alt="Quibbles Logo" class="h-10">
+                </div>
+            <div class="text-gray-500 text-sm flex flex-wrap gap-x-6 gap-y-2 justify-center">
+                <a href="#" class="hover:text-gray-700">About</a>
+                <a href="#" class="hover:text-gray-700">Communities</a>
+                <a href="#" class="hover:text-gray-700">Blog</a>
+                <a href="#" class="hover:text-gray-700">Careers</a>
+                <a href="#" class="hover:text-gray-700">Advertise</a>
+                <a href="#" class="hover:text-gray-700">Privacy</a>
+                <a href="#" class="hover:text-gray-700">Terms</a>
+            </div>
 
+            <div class="text-gray-400. text-xs">
+                &copy; 2026 Quibbles. Made with ❤️ for Nigeria
+            </div>
+            </div>
+            </div>
     </footer>
 
     <script src="js/script.js"></script>
