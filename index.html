@@ -28,6 +28,16 @@
         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
       }
     </style>
+    <style>
+      /* Hides default native scrollbars for a clean mobile application feel */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
   </head>
   <body class="bg-[#f0f2f5] text-gray-900">
     <!-- NAVBAR (MY PART) -->
@@ -57,153 +67,6 @@
               ></i>
             </div>
           </div>
-          <main class="max-w-7xl mx-auto px-4 mt-6">
-            <div
-              class="flex gap-3 overflow-x-auto pb-3 scrollbar-hide text-sm font-medium text-gray-700"
-            >
-              <button
-                class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition"
-              >
-                FUTA
-              </button>
-              <button
-                class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition"
-              >
-                NEWS
-              </button>
-              <button
-                class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition"
-              >
-                Scholarships
-              </button>
-              <button
-                class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition"
-              >
-                Nigeria
-              </button>
-            </div>
-
-            <section class="mt-6">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fa-solid fa-chart-line text-gray-800 text-xl"></i>
-                <h2 class="text-xl font-bold text-gray-900">Featured Posts</h2>
-              </div>
-
-              <div class="grid grid-cols-2 gap-4">
-                <div
-                  class="relative rounded-2xl overflow-hidden h-48 shadow-sm group cursor-pointer"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500"
-                    class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                    alt="University Cut off"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-4 flex flex-col justify-end"
-                  >
-                    <h3 class="text-white font-bold text-base leading-tight">
-                      Full List: Nigerian Universities' UTME Cut-...
-                    </h3>
-                  </div>
-                </div>
-
-                <div
-                  class="relative rounded-2xl overflow-hidden h-48 shadow-sm group cursor-pointer"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
-                    class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                    alt="Story Feature"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-4 flex flex-col justify-end"
-                  >
-                    <h3 class="text-white font-bold text-base leading-tight">
-                      "I was constantly humiliated, physically..."
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="mt-8 mb-20 space-y-4">
-              <div
-                class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm"
-              >
-                <div class="flex items-center justify-between mb-2">
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center"
-                    >
-                      <i class="fa-solid fa-notes-medical text-yellow-600"></i>
-                    </div>
-                    <div>
-                      <h4 class="font-bold text-gray-900 text-sm">Health</h4>
-                      <p class="text-xs text-gray-500">
-                        Posted by
-                        <span class="font-medium text-gray-700">ebubewavy</span>
-                        • 6 hrs ago
-                      </p>
-                    </div>
-                  </div>
-                  <button class="text-gray-400 hover:text-gray-600">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                </div>
-
-                <div class="space-y-1">
-                  <h3
-                    class="font-extrabold text-gray-900 text-base tracking-tight"
-                  >
-                    WALKS
-                  </h3>
-                  <p class="text-gray-600 text-sm leading-relaxed">
-                    Take short walks during the day.
-                  </p>
-                  <p class="text-gray-600 text-sm leading-relaxed">
-                    Even a 10–15 minute walk can improve blood circulation,
-                    reduce stress, and help clear your mind.
-                  </p>
-                  <p class="text-gray-400 text-sm truncate">
-                    Walking regularly also supports heart health, strengthen...
-                  </p>
-                  <a href="#" class="text-blue-600 font-bold text-sm block pt-1"
-                    >Read More</a
-                  >
-                </div>
-
-                <div
-                  class="flex items-center justify-between mt-4 pt-3 border-t border-gray-50"
-                >
-                  <div
-                    class="flex items-center bg-gray-50 rounded-full px-3 py-1.5 gap-3 text-xs font-bold text-gray-600"
-                  >
-                    <button class="hover:text-blue-600 flex items-center gap-1">
-                      <i class="fa-solid fa-arrow-up text-sm"></i> 11
-                    </button>
-                    <div class="w-[1px] h-3 bg-gray-300"></div>
-                    <button class="hover:text-red-500">
-                      <i class="fa-solid fa-arrow-down text-sm"></i>
-                    </button>
-                  </div>
-                  <button
-                    class="flex items-center gap-1.5 text-xs font-bold text-gray-500 hover:text-gray-700"
-                  >
-                    <i class="fa-regular fa-comment text-sm"></i> 10
-                  </button>
-                  <button
-                    class="flex items-center gap-1.5 text-xs font-bold text-gray-500 hover:text-gray-700"
-                  >
-                    <i class="fa-solid fa-share-nodes text-sm"></i> 0
-                  </button>
-                  <button class="text-gray-400 hover:text-gray-600">
-                    <i class="fa-regular fa-flag text-sm"></i>
-                  </button>
-                </div>
-              </div>
-            </section>
-
-           
           <!-- Right Side -->
           <div class="flex items-center gap-4">
             <button
@@ -227,17 +90,18 @@
         <!-- Navigation -->
         <div class="bg-white rounded-2xl p-4">
           <h3 class="font-medium">Navigation</h3>
+
           <a
             href="#"
-            class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1 rounded-xl font-medium"
+            class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1 bg-red-50 text-red-600 font-bold transition duration-200"
           >
             <i class="fa-solid fa-house w-5"></i>
-            <span>Home</span>
+            <span class="text-sm">Home</span>
           </a>
 
           <a
             href="#"
-            class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1 rounded-xl font-medium"
+            class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1 font-medium"
           >
             <i class="fa-solid fa-clock w-5"></i>
             <span>Latest</span>
@@ -245,7 +109,7 @@
 
           <a
             href="#"
-            class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1"
+            class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1 font-medium"
           >
             <i class="fa-solid fa-fire w-5"></i>
             <span>Trending</span>
@@ -253,7 +117,7 @@
 
           <a
             href="#"
-            class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1 rounded-xl font-medium"
+            class="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 hover:text-blue-600 rounded-xl mt-1 font-medium"
           >
             <i class="fa-solid fa-comment w-5"></i>
             <span>Chat</span>
@@ -482,8 +346,209 @@
       </aside>
 
       <!-- MAIN FEED (AB2FRESH'S PART) -->
-      <main class="flex-1 max-w 2xl">
-        <!-- Put both Create Post + Post Cards here -->
+      <main class="flex-1 max-w-2xl">
+        <div
+          class="bg-white p-4 rounded-2xl border border-gray-100 shadow-sm mb-4"
+        >
+          <div class="flex gap-3">
+            <div
+              class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center font-bold text-red-600 shrink-0"
+            >
+              A
+            </div>
+            <div class="flex-1">
+              <textarea
+                rows="2"
+                class="w-full resize-none text-sm text-gray-700 placeholder-gray-400 focus:outline-none pt-2"
+                placeholder="What's happening in FUTA today? Share your thoughts..."
+              ></textarea>
+
+              <div class="h-[1px] bg-gray-100 my-2"></div>
+
+              <div class="flex items-center justify-between pt-1">
+                <div class="flex gap-4 text-gray-500 text-sm">
+                  <button
+                    class="hover:text-blue-500 flex items-center gap-1.5 transition"
+                  >
+                    <i class="fa-regular fa-image text-base"></i>
+                    <span class="text-xs font-semibold">Media</span>
+                  </button>
+                  <button
+                    class="hover:text-green-500 flex items-center gap-1.5 transition"
+                  >
+                    <i class="fa-solid fa-hashtag text-base"></i>
+                    <span class="text-xs font-semibold">Topic</span>
+                  </button>
+                  <button
+                    class="hover:text-yellow-500 flex items-center gap-1.5 transition"
+                  >
+                    <i class="fa-regular fa-face-smile text-base"></i>
+                    <span class="text-xs font-semibold">Feeling</span>
+                  </button>
+                </div>
+                <button
+                  class="bg-red-600 text-white px-5 py-1.5 rounded-full text-xs font-bold hover:bg-red-700 transition shadow-sm"
+                >
+                  Post
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex gap-3 overflow-x-auto pb-3 scrollbar-hide text-sm font-semibold text-gray-700"
+        >
+          <button
+            class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition shrink-0"
+          >
+            FUTA
+          </button>
+          <button
+            class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition shrink-0"
+          >
+            NEWS
+          </button>
+          <button
+            class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition shrink-0"
+          >
+            Scholarships
+          </button>
+          <button
+            class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition shrink-0"
+          >
+            Nigeria
+          </button>
+        </div>
+
+        <section class="mt-4">
+          <div class="flex items-center gap-2 mb-4">
+            <i class="fa-solid fa-chart-line text-gray-800 text-lg"></i>
+            <h2 class="text-lg font-extrabold text-gray-900 tracking-tight">
+              Featured Posts
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div
+              class="relative rounded-2xl overflow-hidden h-40 shadow-sm group cursor-pointer"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="University Cut off"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-3 flex flex-col justify-end"
+              >
+                <h3 class="text-white font-bold text-xs leading-snug">
+                  Full List: Nigerian Universities' UTME Cut-Off Marks
+                </h3>
+              </div>
+            </div>
+
+            <div
+              class="relative rounded-2xl overflow-hidden h-40 shadow-sm group cursor-pointer"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Story Feature"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-3 flex flex-col justify-end"
+              >
+                <h3 class="text-white font-bold text-xs leading-snug">
+                  "I was constantly humiliated, physically..."
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-6 mb-20 space-y-4">
+          <div
+            class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center"
+                >
+                  <i
+                    class="fa-solid fa-notes-medical text-yellow-600 text-base"
+                  ></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-sm tracking-tight">
+                    Health
+                  </h4>
+                  <p class="text-xs text-gray-500">
+                    By
+                    <span class="font-medium text-gray-700">ebubewavy</span> • 6
+                    hrs ago
+                  </p>
+                </div>
+              </div>
+              <button class="text-gray-400 hover:text-gray-600">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+
+            <div class="space-y-1.5">
+              <h3 class="font-black text-gray-900 text-base tracking-tight">
+                WALKS
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Take short walks during the day.
+              </p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Even a 10–15 minute walk can improve blood circulation, reduce
+                stress, and help clear your mind.
+              </p>
+              <a
+                href="#"
+                class="text-blue-600 font-bold text-xs block pt-1 hover:underline"
+                >Read More</a
+              >
+            </div>
+
+            <div
+              class="flex items-center justify-between mt-4 pt-3 border-t border-gray-100"
+            >
+              <div
+                class="flex items-center bg-gray-100 rounded-full px-3 py-1.5 gap-3 text-xs font-bold text-gray-600"
+              >
+                <button class="hover:text-blue-600 flex items-center gap-1">
+                  <i class="fa-solid fa-arrow-up text-sm"></i> 11
+                </button>
+                <div class="w-[1px] h-3 bg-gray-300"></div>
+                <button class="hover:text-red-500">
+                  <i class="fa-solid fa-arrow-down text-sm"></i>
+                </button>
+              </div>
+              <button
+                class="flex items-center gap-1.5 text-xs font-bold text-gray-500 hover:text-gray-700 bg-gray-50 px-3 py-1.5 rounded-full"
+              >
+                <i class="fa-regular fa-comment text-sm"></i> 10
+              </button>
+              <button
+                class="flex items-center gap-1.5 text-xs font-bold text-gray-500 hover:text-gray-700 bg-gray-50 px-3 py-1.5 rounded-full"
+              >
+                <i class="fa-solid fa-share-nodes text-sm"></i> 0
+              </button>
+              <button class="text-gray-400 hover:text-gray-600">
+                <i class="fa-regular fa-flag text-sm"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <button
+          class="fixed bottom-6 right-6 w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-xl hover:bg-red-700 transition transform hover:scale-105 z-50"
+        >
+          <i class="fa-solid fa-plus text-xl"></i>
+        </button>
       </main>
 
       <!-- RIGHT SIDEBAR (AB2FRESH'S PART) -->
