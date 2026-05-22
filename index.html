@@ -20,6 +20,16 @@
       };
     </script>
     <style>
+    aside::-webkit-scrollbar,
+    main::-webkit-scrollbar {
+    display: none;
+}
+
+    aside,
+    main {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
       .post-card {
         transition: all 0.2s;
       }
@@ -56,154 +66,7 @@
                 class="fa-solid fa-magnifying-glass absolute left-4 top-3 text-gray-400"
               ></i>
             </div>
-          </div>
-          <main class="max-w-7xl mx-auto px-4 mt-6">
-            <div
-              class="flex gap-3 overflow-x-auto pb-3 scrollbar-hide text-sm font-medium text-gray-700"
-            >
-              <button
-                class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition"
-              >
-                FUTA
-              </button>
-              <button
-                class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition"
-              >
-                NEWS
-              </button>
-              <button
-                class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition"
-              >
-                Scholarships
-              </button>
-              <button
-                class="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full border border-gray-200 transition"
-              >
-                Nigeria
-              </button>
-            </div>
-
-            <section class="mt-6">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fa-solid fa-chart-line text-gray-800 text-xl"></i>
-                <h2 class="text-xl font-bold text-gray-900">Featured Posts</h2>
-              </div>
-
-              <div class="grid grid-cols-2 gap-4">
-                <div
-                  class="relative rounded-2xl overflow-hidden h-48 shadow-sm group cursor-pointer"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500"
-                    class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                    alt="University Cut off"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-4 flex flex-col justify-end"
-                  >
-                    <h3 class="text-white font-bold text-base leading-tight">
-                      Full List: Nigerian Universities' UTME Cut-...
-                    </h3>
-                  </div>
-                </div>
-
-                <div
-                  class="relative rounded-2xl overflow-hidden h-48 shadow-sm group cursor-pointer"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
-                    class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                    alt="Story Feature"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-4 flex flex-col justify-end"
-                  >
-                    <h3 class="text-white font-bold text-base leading-tight">
-                      "I was constantly humiliated, physically..."
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="mt-8 mb-20 space-y-4">
-              <div
-                class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm"
-              >
-                <div class="flex items-center justify-between mb-2">
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center"
-                    >
-                      <i class="fa-solid fa-notes-medical text-yellow-600"></i>
-                    </div>
-                    <div>
-                      <h4 class="font-bold text-gray-900 text-sm">Health</h4>
-                      <p class="text-xs text-gray-500">
-                        Posted by
-                        <span class="font-medium text-gray-700">ebubewavy</span>
-                        • 6 hrs ago
-                      </p>
-                    </div>
-                  </div>
-                  <button class="text-gray-400 hover:text-gray-600">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                </div>
-
-                <div class="space-y-1">
-                  <h3
-                    class="font-extrabold text-gray-900 text-base tracking-tight"
-                  >
-                    WALKS
-                  </h3>
-                  <p class="text-gray-600 text-sm leading-relaxed">
-                    Take short walks during the day.
-                  </p>
-                  <p class="text-gray-600 text-sm leading-relaxed">
-                    Even a 10–15 minute walk can improve blood circulation,
-                    reduce stress, and help clear your mind.
-                  </p>
-                  <p class="text-gray-400 text-sm truncate">
-                    Walking regularly also supports heart health, strengthen...
-                  </p>
-                  <a href="#" class="text-blue-600 font-bold text-sm block pt-1"
-                    >Read More</a
-                  >
-                </div>
-
-                <div
-                  class="flex items-center justify-between mt-4 pt-3 border-t border-gray-50"
-                >
-                  <div
-                    class="flex items-center bg-gray-50 rounded-full px-3 py-1.5 gap-3 text-xs font-bold text-gray-600"
-                  >
-                    <button class="hover:text-blue-600 flex items-center gap-1">
-                      <i class="fa-solid fa-arrow-up text-sm"></i> 11
-                    </button>
-                    <div class="w-[1px] h-3 bg-gray-300"></div>
-                    <button class="hover:text-red-500">
-                      <i class="fa-solid fa-arrow-down text-sm"></i>
-                    </button>
-                  </div>
-                  <button
-                    class="flex items-center gap-1.5 text-xs font-bold text-gray-500 hover:text-gray-700"
-                  >
-                    <i class="fa-regular fa-comment text-sm"></i> 10
-                  </button>
-                  <button
-                    class="flex items-center gap-1.5 text-xs font-bold text-gray-500 hover:text-gray-700"
-                  >
-                    <i class="fa-solid fa-share-nodes text-sm"></i> 0
-                  </button>
-                  <button class="text-gray-400 hover:text-gray-600">
-                    <i class="fa-regular fa-flag text-sm"></i>
-                  </button>
-                </div>
-              </div>
-            </section>
-
-           
+        </div>
           <!-- Right Side -->
           <div class="flex items-center gap-4">
             <button
@@ -221,9 +84,9 @@
       </div>
     </nav>
 
-    <div class="max-w-7xl mx-auto flex gap-6 px-4 py-6">
+    <div class="max-w-7xl mx-auto flex gap-6 px-4 py-6 items-start">
       <!-- LEFT SIDEBAR (MY PART) -->
-      <aside class="w-64 hidden lg:block space-y-6">
+      <aside class="w-64 hidden lg:block space-y-6 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto">
         <!-- Navigation -->
         <div class="bg-white rounded-2xl p-4">
           <h3 class="font-medium">Navigation</h3>
@@ -481,20 +344,359 @@
         </div>
       </aside>
 
-      <!-- MAIN FEED (AB2FRESH'S PART) -->
-      <main class="flex-1 max-w 2xl">
-        <!-- Put both Create Post + Post Cards here -->
-      </main>
+       <!-- MAIN FEED (AB2FRESH'S PART) -->
+<main class="flex-1 max-w-2xl h-[calc(100vh-3.5rem)] overflow-y-auto sticky top-14">
+    <!-- Filter Tabs -->
+    <div class="bg-white rounded-2xl p-4 mb-4">
+        <div class="flex gap-2 flex-wrap">
+            <button class="bg-blue-600 text-white px-4 py-1.5 rounded-full text-sm font-medium">Latest Posts</button>
+            <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded-full text-sm font-medium">interaction</button>
+            <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded-full text-sm font-medium">NEWS</button>
+            <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded-full text-sm font-medium">Jobs</button>
+            <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded-full text-sm font-medium">gist_corner</button>
+            <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded-full text-sm font-medium">Nigeria</button>
+            <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded-full text-sm font-medium">Education</button>
+            <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded-full text-sm font-medium">Health</button>
+            <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded-full text-sm font-medium">Ai</button>
+            <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded-full text-sm font-medium">QuibblesRewardsHub</button>
+            <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded-full text-sm font-medium">Entertainment</button>
+        </div>
+    </div>
+
+    <!-- Post Card 1 -->
+    <div class="bg-white rounded-2xl p-4 mb-4 post-card">
+        <div class="flex gap-4">
+            <!-- Vote Column -->
+            <div class="flex flex-col items-center gap-1 text-gray-500">
+                <button class="hover:text-blue-600"><i class="fa-solid fa-arrow-up"></i></button>
+                <span class="text-sm font-bold">23</span>
+                <button class="hover:text-red-500"><i class="fa-solid fa-arrow-down"></i></button>
+            </div>
+            <!-- Content -->
+            <div class="flex-1">
+                <div class="flex items-center gap-2 mb-2">
+                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=QuibblesRewardsHub.png" class="w-6 h-6 rounded-full">
+                    <span class="text-sm font-semibold text-blue-600">QuibblesRewardsHub</span>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-1">If you won yesterday but haven't sent your account details, please check your DM</h3>
+                <p class="text-sm text-gray-600 mb-3">Check your DM and send your account details. Next week we go again, but with 10 WINNERS! 😊😊😀😀</p>
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                    <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-regular fa-comment"></i> 18 Comments</button>
+                    <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    <button class="flex items-center gap-1 hover:text-red-500"><i class="fa-regular fa-flag"></i> Report</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Card 2 -->
+    <div class="bg-white rounded-2xl p-4 mb-4 post-card">
+        <div class="flex gap-4">
+            <div class="flex flex-col items-center gap-1 text-gray-500">
+                <button class="hover:text-blue-600"><i class="fa-solid fa-arrow-up"></i></button>
+                <span class="text-sm font-bold">1</span>
+                <button class="hover:text-red-500"><i class="fa-solid fa-arrow-down"></i></button>
+            </div>
+            <div class="flex-1">
+                <div class="flex items-center gap-2 mb-2">
+                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=business.png" class="w-6 h-6 rounded-full">
+                    <span class="text-sm font-semibold text-blue-600">business</span>
+                    <span class="text-xs text-gray-400">• Posted by temiii • 31 mins ago</span>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-1">Support this hair brand</h3>
+                <div class="flex items-center gap-4 text-sm text-gray-500 mt-3">
+                    <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-regular fa-comment"></i> 0 Comments</button>
+                    <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    <button class="flex items-center gap-1 hover:text-red-500"><i class="fa-regular fa-flag"></i> Report</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Card -->
+<div class="bg-white rounded-2xl p-4 mb-4 post-card">
+    <div class="flex gap-4">
+        <div class="flex flex-col items-center gap-1 text-gray-500">
+            <button class="hover:text-blue-600"><i class="fa-solid fa-arrow-up"></i></button>
+            <span class="text-sm font-bold">3</span>
+            <button class="hover:text-red-500"><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+        <div class="flex-1">
+            <div class="flex items-center gap-2 mb-2">
+                <img src="https://api.dicebear.com/9.x/icons/svg?seed=Thoughts.png" class="w-6 h-6 rounded-full">
+                <span class="text-sm font-semibold text-blue-600">Thoughts</span>
+                <span class="text-xs text-gray-400">• Posted by michael26 • 2 hrs ago</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-1">A simple advice</h3>
+            <p class="text-sm text-gray-600 mb-3">Pay attention to patterns, not just feelings. Consistent character is what determines peace long term.</p>
+            <div class="flex items-center gap-4 text-sm text-gray-500">
+                <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-regular fa-comment"></i> 1 Comment</button>
+                <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                <button class="flex items-center gap-1 hover:text-red-500"><i class="fa-regular fa-flag"></i> Report</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Post Card 3 -->
+<div class="bg-white rounded-2xl p-4 mb-4 post-card">
+    <div class="flex gap-4">
+        <div class="flex flex-col items-center gap-1 text-gray-500">
+            <button class="hover:text-blue-600"><i class="fa-solid fa-arrow-up"></i></button>
+            <span class="text-sm font-bold">47</span>
+            <button class="hover:text-red-500"><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+        <div class="flex-1">
+            <div class="flex items-center gap-2 mb-2">
+                <img src="https://api.dicebear.com/9.x/icons/svg?seed=Nigeria.png" class="w-6 h-6 rounded-full">
+                <span class="text-sm font-semibold text-blue-600">Nigeria</span>
+                <span class="text-xs text-gray-400">• Posted by naijagist • 1 hr ago</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-1">BREAKING: Federal Government announces new minimum wage increase</h3>
+            <p class="text-sm text-gray-600 mb-3">The FG has officially approved a new minimum wage for all Nigerian workers effective from next month. Workers across all sectors are expected to benefit from this new policy.</p>
+            <div class="flex items-center gap-4 text-sm text-gray-500">
+                <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-regular fa-comment"></i> 34 Comments</button>
+                <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                <button class="flex items-center gap-1 hover:text-red-500"><i class="fa-regular fa-flag"></i> Report</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Post Card 4 -->
+<div class="bg-white rounded-2xl p-4 mb-4 post-card">
+    <div class="flex gap-4">
+        <div class="flex flex-col items-center gap-1 text-gray-500">
+            <button class="hover:text-blue-600"><i class="fa-solid fa-arrow-up"></i></button>
+            <span class="text-sm font-bold">12</span>
+            <button class="hover:text-red-500"><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+        <div class="flex-1">
+            <div class="flex items-center gap-2 mb-2">
+                <img src="https://api.dicebear.com/9.x/icons/svg?seed=Education.png" class="w-6 h-6 rounded-full">
+                <span class="text-sm font-semibold text-blue-600">Education</span>
+                <span class="text-xs text-gray-400">• Posted by scholar_boy • 3 hrs ago</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-1">JAMB 2026 results are out — here's how to check yours</h3>
+            <p class="text-sm text-gray-600 mb-3">JAMB has released the 2026 UTME results. Log in to your JAMB profile on the official portal to check your score. Many candidates are already celebrating high scores this year!</p>
+            <div class="flex items-center gap-4 text-sm text-gray-500">
+                <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-regular fa-comment"></i> 89 Comments</button>
+                <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                <button class="flex items-center gap-1 hover:text-red-500"><i class="fa-regular fa-flag"></i> Report</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Post Card 5 -->
+<div class="bg-white rounded-2xl p-4 mb-4 post-card">
+    <div class="flex gap-4">
+        <div class="flex flex-col items-center gap-1 text-gray-500">
+            <button class="hover:text-blue-600"><i class="fa-solid fa-arrow-up"></i></button>
+            <span class="text-sm font-bold">8</span>
+            <button class="hover:text-red-500"><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+        <div class="flex-1">
+            <div class="flex items-center gap-2 mb-2">
+                <img src="https://api.dicebear.com/9.x/icons/svg?seed=Health.png" class="w-6 h-6 rounded-full">
+                <span class="text-sm font-semibold text-blue-600">Health</span>
+                <span class="text-xs text-gray-400">• Posted by drwellness • 5 hrs ago</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-1">Stop drinking cold water immediately after a meal — here's why</h3>
+            <p class="text-sm text-gray-600 mb-3">Many Nigerians don't know that drinking very cold water right after eating can slow down digestion and cause bloating. Warm or room temperature water is always the better choice after food.</p>
+            <div class="flex items-center gap-4 text-sm text-gray-500">
+                <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-regular fa-comment"></i> 21 Comments</button>
+                <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                <button class="flex items-center gap-1 hover:text-red-500"><i class="fa-regular fa-flag"></i> Report</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Post Card 6 -->
+<div class="bg-white rounded-2xl p-4 mb-4 post-card">
+    <div class="flex gap-4">
+        <div class="flex flex-col items-center gap-1 text-gray-500">
+            <button class="hover:text-blue-600"><i class="fa-solid fa-arrow-up"></i></button>
+            <span class="text-sm font-bold">31</span>
+            <button class="hover:text-red-500"><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+        <div class="flex-1">
+            <div class="flex items-center gap-2 mb-2">
+                <img src="https://api.dicebear.com/9.x/icons/svg?seed=Jobs.png" class="w-6 h-6 rounded-full">
+                <span class="text-sm font-semibold text-blue-600">Jobs</span>
+                <span class="text-xs text-gray-400">• Posted by recruitpro • 30 mins ago</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-1">Remote job opening — Frontend Developer needed urgently</h3>
+            <p class="text-sm text-gray-600 mb-3">A fast growing Lagos startup is looking for a skilled Frontend Developer with experience in React or Vue.js. Position is fully remote with competitive pay in USD. Send your CV to the link in comments.</p>
+            <div class="flex items-center gap-4 text-sm text-gray-500">
+                <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-regular fa-comment"></i> 56 Comments</button>
+                <button class="flex items-center gap-1 hover:text-blue-600"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                <button class="flex items-center gap-1 hover:text-red-500"><i class="fa-regular fa-flag"></i> Report</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
 
       <!-- RIGHT SIDEBAR (AB2FRESH'S PART) -->
-      <aside class="w-80 hidden xl:block">
-        <!-- Build this -->
-      </aside>
+<aside class="w-80 hidden xl:block space-y-4 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto">
+
+    <!-- Ad Space -->
+    <div class="bg-white rounded-2xl p-6 flex items-center justify-center h-48 text-gray-400 text-sm border border-dashed border-gray-300">
+        Advertisement Space
+    </div>
+
+    <!-- Recommended Posts -->
+    <div class="bg-white rounded-2xl p-4">
+        <h3 class="font-bold text-gray-900 mb-4">Recommended Posts</h3>
+        <div class="space-y-4">
+
+            <a href="#" class="block hover:bg-gray-50 rounded-xl p-2 transition">
+                <div class="flex items-center gap-2 mb-1">
+                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=QuibblesRewardsHub.png" class="w-6 h-6 rounded-full">
+                    <span class="text-xs font-semibold text-blue-600">q/QuibblesRewardsHub</span>
+                    <span class="text-xs text-gray-400 ml-auto">1 day ago</span>
+                </div>
+                <p class="text-sm font-medium text-gray-800">If you won yesterday but haven't sent your account details, please check your DM</p>
+                <div class="flex items-center gap-3 mt-1 text-xs text-gray-400">
+                    <span><i class="fa-solid fa-circle-arrow-up"></i> 23 votes</span>
+                    <span><i class="fa-regular fa-comment"></i> 18 comments</span>
+                </div>
+            </a>
+
+            <hr class="border-gray-100">
+
+            <a href="#" class="block hover:bg-gray-50 rounded-xl p-2 transition">
+                <div class="flex items-center gap-2 mb-1">
+                    <img src="https://api.dicebear.com/9.x/icons/svg?seed=Thoughts.png" class="w-6 h-6 rounded-full">
+                    <span class="text-xs font-semibold text-blue-600">q/Thoughts</span>
+                    <span class="text-xs text-gray-400 ml-auto">7 hrs ago</span>
+                </div>
+                <p class="text-sm font-medium text-gray-800">A simple advice</p>
+                <div class="flex items-center gap-3 mt-1 text-xs text-gray-400">
+                    <span><i class="fa-solid fa-circle-arrow-up"></i> 11 votes</span>
+                    <span><i class="fa-regular fa-comment"></i> 15 comments</span>
+                </div>
+            </a>
+
+            <hr class="border-gray-100">
+
+<a href="#" class="block hover:bg-gray-50 rounded-xl p-2 transition">
+    <div class="flex items-center gap-2 mb-1">
+        <img src="https://api.dicebear.com/9.x/icons/svg?seed=Nigeria.png" class="w-6 h-6 rounded-full">
+        <span class="text-xs font-semibold text-blue-600">q/Nigeria</span>
+        <span class="text-xs text-gray-400 ml-auto">1 hr ago</span>
+    </div>
+    <p class="text-sm font-medium text-gray-800">BREAKING: Federal Government announces new minimum wage increase</p>
+    <div class="flex items-center gap-3 mt-1 text-xs text-gray-400">
+        <span><i class="fa-solid fa-circle-arrow-up"></i> 47 votes</span>
+        <span><i class="fa-regular fa-comment"></i> 34 comments</span>
+    </div>
+</a>
+
+<hr class="border-gray-100">
+
+<a href="#" class="block hover:bg-gray-50 rounded-xl p-2 transition">
+    <div class="flex items-center gap-2 mb-1">
+        <img src="https://api.dicebear.com/9.x/icons/svg?seed=Education.png" class="w-6 h-6 rounded-full">
+        <span class="text-xs font-semibold text-blue-600">q/Education</span>
+        <span class="text-xs text-gray-400 ml-auto">3 hrs ago</span>
+    </div>
+    <p class="text-sm font-medium text-gray-800">JAMB 2026 results are out — here's how to check yours</p>
+    <div class="flex items-center gap-3 mt-1 text-xs text-gray-400">
+        <span><i class="fa-solid fa-circle-arrow-up"></i> 12 votes</span>
+        <span><i class="fa-regular fa-comment"></i> 89 comments</span>
+    </div>
+</a>
+
+<hr class="border-gray-100">
+
+<a href="#" class="block hover:bg-gray-50 rounded-xl p-2 transition">
+    <div class="flex items-center gap-2 mb-1">
+        <img src="https://api.dicebear.com/9.x/icons/svg?seed=Jobs.png" class="w-6 h-6 rounded-full">
+        <span class="text-xs font-semibold text-blue-600">q/Jobs</span>
+        <span class="text-xs text-gray-400 ml-auto">30 mins ago</span>
+    </div>
+    <p class="text-sm font-medium text-gray-800">Remote job opening — Frontend Developer needed urgently</p>
+    <div class="flex items-center gap-3 mt-1 text-xs text-gray-400">
+        <span><i class="fa-solid fa-circle-arrow-up"></i> 31 votes</span>
+        <span><i class="fa-regular fa-comment"></i> 56 comments</span>
+    </div>
+</a>
+
+<hr class="border-gray-100">
+
+<a href="#" class="block hover:bg-gray-50 rounded-xl p-2 transition">
+    <div class="flex items-center gap-2 mb-1">
+        <img src="https://api.dicebear.com/9.x/icons/svg?seed=Health.png" class="w-6 h-6 rounded-full">
+        <span class="text-xs font-semibold text-blue-600">q/Health</span>
+        <span class="text-xs text-gray-400 ml-auto">5 hrs ago</span>
+    </div>
+    <p class="text-sm font-medium text-gray-800">Stop drinking cold water immediately after a meal — here's why</p>
+    <div class="flex items-center gap-3 mt-1 text-xs text-gray-400">
+        <span><i class="fa-solid fa-circle-arrow-up"></i> 8 votes</span>
+        <span><i class="fa-regular fa-comment"></i> 21 comments</span>
+    </div>
+</a>
+
+<hr class="border-gray-100">
+
+<a href="#" class="block hover:bg-gray-50 rounded-xl p-2 transition">
+    <div class="flex items-center gap-2 mb-1">
+        <img src="https://api.dicebear.com/9.x/icons/svg?seed=gist_corner.png" class="w-6 h-6 rounded-full">
+        <span class="text-xs font-semibold text-blue-600">q/gist_corner</span>
+        <span class="text-xs text-gray-400 ml-auto">2 hrs ago</span>
+    </div>
+    <p class="text-sm font-medium text-gray-800">This Nollywood actress just bought her third house at 28 — her story is inspiring</p>
+    <div class="flex items-center gap-3 mt-1 text-xs text-gray-400">
+        <span><i class="fa-solid fa-circle-arrow-up"></i> 62 votes</span>
+        <span><i class="fa-regular fa-comment"></i> 43 comments</span>
+    </div>
+</a>
+
+<hr class="border-gray-100">
+
+<a href="#" class="block hover:bg-gray-50 rounded-xl p-2 transition">
+    <div class="flex items-center gap-2 mb-1">
+        <img src="https://api.dicebear.com/9.x/icons/svg?seed=interaction.png" class="w-6 h-6 rounded-full">
+        <span class="text-xs font-semibold text-blue-600">q/interaction</span>
+        <span class="text-xs text-gray-400 ml-auto">4 hrs ago</span>
+    </div>
+    <p class="text-sm font-medium text-gray-800">Which Nigerian university has the best social life? Drop your school below 👇</p>
+    <div class="flex items-center gap-3 mt-1 text-xs text-gray-400">
+        <span><i class="fa-solid fa-circle-arrow-up"></i> 95 votes</span>
+        <span><i class="fa-regular fa-comment"></i> 112 comments</span>
+    </div>
+</a>
+
+<hr class="border-gray-100">
+
+<a href="#" class="block hover:bg-gray-50 rounded-xl p-2 transition">
+    <div class="flex items-center gap-2 mb-1">
+        <img src="https://api.dicebear.com/9.x/icons/svg?seed=Entertainment.png" class="w-6 h-6 rounded-full">
+        <span class="text-xs font-semibold text-blue-600">q/Entertainment</span>
+        <span class="text-xs text-gray-400 ml-auto">6 hrs ago</span>
+    </div>
+    <p class="text-sm font-medium text-gray-800">Burna Boy just dropped a surprise EP — Twitter is going crazy right now</p>
+    <div class="flex items-center gap-3 mt-1 text-xs text-gray-400">
+        <span><i class="fa-solid fa-circle-arrow-up"></i> 118 votes</span>
+        <span><i class="fa-regular fa-comment"></i> 76 comments</span>
+    </div>
+</a>
+
+        </div>
+    </div>
+
+    
+</aside>
+
     </div>
 
     <!-- FOOTER (MY PART) -->
     <footer class="bg-white border-t mt-12 py-8">
-      <div class="max-w 7xl mx-auto px-4">
+      <div class="max-w-7xl mx-auto px-4">
         <div
           class="flex flex-col md:flex-row justify-between items-center gap-6"
         >
