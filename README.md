@@ -29,7 +29,9 @@ Built as a team project by **Confidence** & **Abiodun**.
 
 ## 📸 Screenshots
 
-*(You can add screenshots here later)*
+<img width="1366" height="768" alt="Screenshot 2026-05-23 at 16 10 43" src="https://github.com/user-attachments/assets/6fe037d0-575e-4eac-8130-496fc96019bd" />
+<img width="1366" height="768" alt="Screenshot 2026-05-23 at 16 10 14" src="https://github.com/user-attachments/assets/deb27937-f8cd-4b29-8928-701fad4a4b2e" />
+
 
 ---
 
@@ -76,4 +78,4 @@ Original design by Quibbles
 Built as a weekly team task
 
 
-Made with ❤️ for Nigeria
+## Made with ❤️ for Nigeria
